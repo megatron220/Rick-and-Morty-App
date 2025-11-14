@@ -1,14 +1,12 @@
-import { getLocationDetailInfo } from "@/features/locations/details/api/fetchLocationsInfo";
-import { LocationInfoBlock } from "@/features/locations/details/ui/LocationInfoBlock";
+import { LocationDetailInfoBlock } from "@/features/locations/details/ui/LocationDetailInfoBlock";
 
 type Props = {
-  params: Promise<{ id?: number }>;
+  params: Promise<{ id: string }>;
 };
 
 export default async function LocationInfoPage({ params }: Props) {
-  const { id: idStr } = await params;
-  const id = Number(idStr) ;
-  const data = await getLocationDetailInfo(id);
+  const { id } = await params;
+  const locationId = Number(id);
 
-  return <LocationInfoBlock locationInfo={data} />;
+  return <LocationDetailInfoBlock id={locationId} />;
 }

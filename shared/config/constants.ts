@@ -2,6 +2,7 @@ export const BASE_API__CHARACTERS_URL =
   "https://rickandmortyapi.com/api/character";
 export const BASE_API__LOCATIONS_URL =
   "https://rickandmortyapi.com/api/location";
+export const BASE_API__EPISODES_URL = "https://rickandmortyapi.com/api/episode";
 
 export const locationsImages = [
   "https://avatars.mds.yandex.net/i?id=348913d7fe4bf3b18673fbb2e25180905f7f2ed6-12651048-images-thumbs&n=13",
@@ -22,4 +23,20 @@ export const locationsImages = [
   "https://avatars.mds.yandex.net/i?id=95eea9ea034ed61f66eef627f3363fea328197bf-2352943-images-thumbs&n=13",
   "https://avatars.mds.yandex.net/i?id=520b527d0ceeb88e7c712b55f3b5fcbbc24bf8c3-11424584-images-thumbs&n=13",
   "https://avatars.mds.yandex.net/i?id=fd4ed865b5d233729571d1bec5db337757080155-4825035-images-thumbs&n=13",
+];
+
+export const episodesImages = [
+  "https://media.cnn.com/api/v1/images/stellar/prod/fear-no-mort.jpg?q=w_1110,c_fill",
+  "https://decider.com/wp-content/uploads/2021/07/rick-and-morty-s5-ep5-3.jpg?quality=90&amp;strip=all&amp;w=1200",
+  "https://i.pinimg.com/originals/81/76/1d/81761dbc7dc42cf352d0ce3f250caaa7.jpg",
+  "https://static.kinoafisha.info/k/articles/1200/upload/articles/569195864350.jpg",
+  "https://i.ytimg.com/vi/s8PYIVV00MY/maxresdefault.jpg",
+  "https://i.ytimg.com/vi/v0FK77NJgRk/maxresdefault.jpg",
+  "https://i.ytimg.com/vi/nnZHB5iqP-k/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgXyhJMA8=&amp;rs=AOn4CLDfed-nWkJBuJvLhgZDwQmZHOe_gQ",
+  "https://wallpapers.com/images/hd/jerry-smith-1920-x-1080-wallpaper-ikqvxp84upkqmq24.jpg",
+  "https://i.playground.ru/e/3gR6nUHBYXeGvjDrNY9U7Q.png",
+  "https://i.pinimg.com/originals/4b/f1/6c/4bf16c9f9ef8165d70ca58d4b7f685f2.png",
+  "https://static.wikia.nocookie.net/rickandmorty/images/2/29/A_Rickle_in_Time.png/revision/latest?cb=20160920022627",
+  "https://i.playground.ru/e/3uDa0Irmfs5vHCoa6FQEoQ.webp",
+  "https://wallpapers.com/images/hd/rick-and-morty-zoom-background-zttjd78mm12bcb72.jpg",
 ];

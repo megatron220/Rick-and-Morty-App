@@ -2,6 +2,7 @@ import { Header } from "@/shared/ui";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import CssBaseline from "@mui/material/CssBaseline";
+import { Provider } from "./providers";
 
 export const metadata: Metadata = {
   title: "Rick and Morty",
@@ -15,10 +16,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <CssBaseline />
-      <body className={`${GeistSans.className} antialiased`}>
-        <Header />
-        <main className="container">{children}</main>
+      <body
+        className={`${GeistSans.className} antialiased bg-black text-white`}
+      >
+        <CssBaseline />
+
+        <Provider>
+          <Header />
+          <main
+            className="container mx-auto"
+            style={{
+              paddingLeft: "1rem",
+              paddingRight: "1rem",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+            }}
+          >
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );

@@ -11,14 +11,21 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
     "@reduxjs/toolkit": "^2.10.1",
+    "@tanstack/react-query": "^5.90.8",
+    "date-fns": "^4.1.0",
     "geist": "^1.5.1",
+    "motion": "^12.23.24",
     "next": "16.0.1",
     "nuqs": "^2.7.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "react-redux": "^9.2.0"
+    "react-parallax": "^3.5.2",
+    "react-redux": "^9.2.0",
+    "react-virtualized-auto-sizer": "^1.0.26",
+    "react-window": "^2.2.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

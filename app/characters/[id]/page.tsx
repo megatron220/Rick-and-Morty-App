@@ -1,4 +1,5 @@
-import { getCharacterInfo } from "@/features/characters/details/api/fetchCharacterInfo";
+import { getCharacterInfo } from "@/features/characters/details/api/fetchDetailCharacters";
+import { CharacterDetailInfoBlock } from "@/features/characters/details/ui/CharacterDetailInfoBlock";
 import { CharacterInfoBlock } from "@/features/characters/details/ui/CharacterInfoBlock";
 
 type Props = {
@@ -6,9 +7,7 @@ type Props = {
 };
 
 export default async function ChatacterInfoPage({ params }: Props) {
-  const { id: idStr } = await params;
-  const id = Number(idStr);
-  const data = await getCharacterInfo(id);
-
-  return <CharacterInfoBlock characterInfo={data} />;
+  const { id } = await params;
+  const characterId = Number(id);
+  return <CharacterDetailInfoBlock id={characterId} />;
 }
