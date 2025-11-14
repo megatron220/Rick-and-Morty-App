@@ -19,7 +19,7 @@ export default function HomePage() {
           px: { xs: 2, sm: 3, md: 0 },
         }}
       >
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid xs={12} sm={6} md={4}>
           <PortalCard
             title={"Персонажи вселенной"}
             href={"/characters"}
@@ -29,7 +29,7 @@ export default function HomePage() {
             text={"Персонажи Rick and Morty"}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid xs={12} sm={6} md={4}>
           <PortalCard
             title={"Локации вселенной"}
             href={"/locations"}
@@ -39,7 +39,7 @@ export default function HomePage() {
             text={"Локации Rick and Morty"}
           />
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid xs={12} sm={12} md={4}>
           <PortalCard
             title={"Эпизоды сериала"}
             href={"/episodes"}
