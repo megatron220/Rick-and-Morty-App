@@ -36,10 +36,9 @@ export function PortalCard({
       >
         <CardMedia
           component="img"
-          height={{ xs: 120, sm: 140 }}
           image={icon}
           alt={title}
-          sx={{ objectFit: "cover" }}
+          sx={{ objectFit: "cover", height: { xs: 120, sm: 140 } }}
         />
         <CardContent sx={{ flexGrow: 1 }}>
           <Typography
