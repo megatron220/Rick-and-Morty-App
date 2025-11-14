@@ -17,10 +17,9 @@ export const LocationInfoCard = ({ location }: locationInfoCardProps) => {
     >
       <CardMedia
         component="img"
-        height={{ xs: 280, sm: 340 }}
         src={image}
         alt={location.name}
-        sx={{ objectFit: "cover" }}
+        sx={{ objectFit: "cover", height: { xs: 280, sm: 340 } }}
       />
       <CardContent>
         <Typography
