@@ -32,8 +32,8 @@ export const NavLinks = ({ onLinkClick }: NavLinksProps = {}) => {
             href={link.href}
             color="inherit"
             onClick={onLinkClick}
-            fullWidth={{ xs: true, md: false }}
             sx={{
+              width: { xs: "100%", md: "auto" },
               fontWeight: pathName === link.href ? "bold" : "normal",
               textDecoration: pathName === link.href ? "underline" : "none",
               justifyContent: { xs: "flex-start", md: "center" },
