@@ -5,7 +5,12 @@ export const getLocationDetailInfo = async (
   id: number
 ): Promise<LocationInformation> => {
   const response = await fetch(`${BASE_API__LOCATIONS_URL}/${id}`, {
-    next: { revalidate: 3600 },
+    cache: "no-store",
   });
+
+  if (!response.ok) {
+    throw new Error("Не удалось загрузить информацию о локации");
+  }
+
   return response.json();
 };

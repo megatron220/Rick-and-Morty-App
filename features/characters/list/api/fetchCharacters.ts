@@ -1,15 +1,19 @@
-"use server";
-
 import { CharacterApiResponse } from "@/entities/character/model/types";
 import { BASE_API__CHARACTERS_URL } from "@/shared/config/constants";
 
-const getCharactersData = async (
+export const fetchCharacters = async (
   page: number
 ): Promise<CharacterApiResponse> => {
-  const responce = await fetch(`${BASE_API__CHARACTERS_URL}/?page=${page}`, {
-    next: { revalidate: 3600 },
-  });
-  return responce.json();
-};
+  const params = new URLSearchParams();
+  if (page > 1) params.set("page", String(page));
 
-export { getCharactersData };
+  const response = await fetch(`${BASE_API__CHARACTERS_URL}?${params}`, {
+    cache: "no-store",
+  });
+
+  if (!response.ok) {
+    throw new Error("Не удалось загрузить персонажей");
+  }
+
+  return response.json();
+};

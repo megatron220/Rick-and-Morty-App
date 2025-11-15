@@ -20,4 +20,7 @@ export interface LocationInformation {
   name: string;
   type: string;
   demension: string;
+
+  residents: string[];
+  created: string;
 }
